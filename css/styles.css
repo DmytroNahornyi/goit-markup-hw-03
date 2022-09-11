@@ -1,0 +1,344 @@
+/* Цвет основного текста color: #212121; */
+/* Цвет лого color: #2196F3; */
+/* Цвет Studio color: #000000; */
+/* Цвет футера + описание белым color: #FFFFFF; */
+/* Кнопка героя background: #2196F3; */
+/* Описание блоков color: #757575; */
+/* Цвет кнопок #F5F4FA */
+:root {
+    --body-text: #212121;
+    --logo: #2196F3;
+    --nav-logo: #000000;
+    --header-contact: #757575;
+    --hero: #ffffff;
+    --button-hero: #2196F3;
+    --footer-logo: #ffffff;
+    --footer-adress: #ffffff;
+    --button: #F5F4FA;
+    --hero-size: #2F303A;
+}
+/* Применяется на всю страницу кроме ссылок. */
+body {
+    color: var(--body-text);
+/* Шрифты */
+    font-family: roboto, sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+}
+/* Спрятанный заголовок */
+.hide {
+    font-size: 0;
+}
+/* убераем границы и точки в списках */
+.list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+img {
+    display: block;
+}
+a {
+    text-decoration: none;
+    font-style: normal;
+    }
+    /* Контейнеры под блоки */
+.container {
+    margin: 0 auto;
+    padding: 0 15px;
+    width: 1200px; }
+
+/* Логотип */
+.logo {
+    color: var(--logo);
+
+}
+/* цвет кнопок хедера */
+.current:active, 
+.current:visited,
+.header-futer a:hover,
+.header-futer a:focus {
+    color: var(--logo);
+}
+/* навигация кнопок */
+.site-nav{
+    display: flex;
+    margin-left: 93px;
+    flex-wrap: wrap;
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+}
+
+.item {
+    margin-right: 50px;
+}
+
+.site-nav .item:last-child {
+    margin-right: 0px;
+}
+
+/* Кнопки хедера */
+.header-futer a {
+    display: block;
+    padding-top: 21px;
+    padding-bottom: 21px;
+
+    color: var(--body-text);
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    
+}
+/* Контакты в хедере */
+.header-contact {
+    display: flex;
+    margin-left: auto;
+}
+.header-contact .item:last-child {
+    margin-right: 0px;
+}
+
+.header-contact a {
+    display: block;
+    padding-top: 21px;
+    padding-bottom: 21px;
+
+    color: var(--header-contact);
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+.header-contact a:hover, 
+.header-contact a:focus {
+    color: var(--logo);
+}
+
+/* шрифт лого */
+.nav-logo > a {
+    color: var(--nav-logo);
+
+    font-family: raleway;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+/* identical to box height */
+    letter-spacing: 0.03em;
+}
+.hero-size {
+    width: 1600px;
+    height: 600px;
+    left: 0px;
+    top: 80px;
+    background: var(--hero-size);  
+    margin-bottom: 94px;  
+}
+.hero-text {
+    margin-top: 0px;
+    margin-bottom: 30px;
+    padding-top: 200px;
+    color: var(--hero);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+/* or 136% */
+    text-align: center;
+
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    }
+/* button hero */
+.button-hero {
+    color: var(--hero);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    background-color: var(--button-hero);
+    border-radius: 4px;
+    border: 1px solid transparent;
+    padding: 10px 32px;
+    margin: 0 auto;
+
+/* identical to box height, or 188% */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+}
+/* заголовки проффессий */
+.section-prof {
+    display: flex;
+    flex-wrap: nowrap;
+}
+.item-text {
+    width: 270px;
+}
+.section-prof h3{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    /* text-transform: uppercase; */
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+/* текст профессий */
+.list .item-text:last-child {
+    margin-right: 0px;}
+
+.item-text {
+    margin-right: 30px;
+}
+.text-prof p {
+    color: var(--header-contact);
+    line-height: 1.71;
+    
+    margin-top: 0;
+    margin-bottom: 118px;
+/* or 171% */
+
+    letter-spacing: 0.03em;
+}
+/* Заголовки */
+.header-img {
+    display: flex;
+    flex-wrap: nowrap;
+}
+.imeges:last-child {
+    margin-right: 0px;}
+
+.imeges {
+    margin-right: 30px;
+    margin-bottom: 94px;
+}
+
+.header {
+    margin-top: 0px;
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    
+}
+/* отступ у картинок */
+.img {
+    display: flex;
+    flex-wrap: nowrap;
+}
+.img:last-child {
+    margin-right: 0px;}
+
+.img img{
+    margin-top: 0px;
+    margin-bottom: 30px;
+    margin-right: 30px;
+}.test {
+    
+}
+/* заголовки секции */
+.section-img h3 {
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+/* identical to box height */
+
+    letter-spacing: 0.03em;
+}
+/* текст секции */
+.section-text p{
+    color: var(--header-contact);
+    font-size: 16px;
+    line-height: 1.19;
+    margin-bottom: 124px;
+    text-align: center;
+/* identical to box height */
+
+    letter-spacing: 0.03em;
+}
+/* Подвал */
+.footer-logo{
+    color: var(--footer-logo);
+    font-family: raleway;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+/* identical to box height */
+    letter-spacing: 0.03em;
+
+}
+.footer {
+    /* width: 1600px; */
+    height: 252px;  
+    /* margin: 0 auto; */
+    background-color: var(--hero-size);
+}
+.footer-adress a{
+    color: var(--footer-adress);
+    line-height: 1.71;
+/* or 171% */
+
+    letter-spacing: 0.03em;
+}
+.footer-adress a:hover, 
+.footer-adress a:focus {
+    color: var(--logo);
+}
+/* 2 страница без header and foother */
+/* кнопки */
+.button {
+    font-family: roboto;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    padding: 5px 22px;
+    margin: 4px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+/* identical to box height, or 162% */
+    letter-spacing: 0.03em;
+    text-align: center;
+    display: inline-block;
+}
+
+.button:hover,
+.button:focus {
+    color: var(--hero);
+    background-color: var(--button-hero);
+    border: 1px solid transparent;
+}
+/* 2 страница картинки */
+.imege img {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+/* 2 страница заголовки */
+.section-header h2{
+    margin-top: 0;
+    margin-bottom: 4px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+/* identical to box height, or 200% */
+
+    letter-spacing: 0.06em;
+}
+/* 2 страница текст после заголовка */
+.section-texts p{
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 16px;
+    line-height: 30px;
+/* identical to box height, or 188% */
+
+    letter-spacing: 0.03em;
+}
